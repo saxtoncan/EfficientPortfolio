@@ -65,6 +65,7 @@ A simple and easy-to-use Python application for analyzing and optimizing stock p
 
 - Navigate to the directory where you ran the code. You will find an Excel file named as you specified.
 - The stock data includes open, high, low, close, adjusted closing, volume, efficient frontier, optimal portfolio, correlation matrix, and covariance matrix.
+- Check example.xlsx in this repository to see how the result looks.
 
 ## Thanks
 
