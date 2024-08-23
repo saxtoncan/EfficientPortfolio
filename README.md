@@ -31,7 +31,7 @@ A simple and easy-to-use Python application for analyzing and optimizing stock p
 5. **Run the Application:**
    - Execute the following command:
      ```bash
-     python main.py
+     python whatyounamedit.py
      ```
 
 6. **Handle Missing Libraries:**
@@ -64,8 +64,7 @@ A simple and easy-to-use Python application for analyzing and optimizing stock p
 ## Results
 
 - Navigate to the directory where you ran the code. You will find an Excel file named as you specified.
-- Each stock has its own sheet with data, including open, high, low, close, adjusted closing, and volume.
-- Summary sheets with combined data for all stocks are also included.
+- The stock data includes open, high, low, close, adjusted closing, volume, efficient frontier, optimal portfolio, correlation matrix, and covariance matrix.
 
 ## Thanks
 
