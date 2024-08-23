@@ -31,7 +31,7 @@ A simple and easy-to-use Python application for analyzing and optimizing stock p
 5. **Run the Application:**
    - Execute the following command:
      ```bash
-     python whatyounamedit.py
+     python3 whatyounamedit.py
      ```
 
 6. **Handle Missing Libraries:**
