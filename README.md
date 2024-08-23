@@ -1,97 +1,72 @@
 # Efficient Portfolio
 
-The **Efficient Portfolio** project is a Python-based application designed to analyze and optimize stock portfolios. This tool helps users fetch historical stock data, calculate various financial metrics, and visualize the efficient frontier of a portfolio.
+A simple and easy-to-use Python application for analyzing and optimizing stock portfolios. This tool helps users fetch historical stock data from Yahoo Finance, calculate various financial metrics, and visualize the efficient frontier of a portfolio. It includes a user-friendly GUI for beginners.
 
-## Table of Contents
+## How-To-Setup
 
-1. [Features](#features)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Code Overview](#code-overview)
-5. [Contributing](#contributing)
-6. [License](#license)
+1. **Install Python:**
+   - For macOS/Linux, download Python from [python.org](https://www.python.org/downloads/).
+   - For Windows, it's best to download the latest version from the Microsoft Store.
 
-## Features
+2. **Install Required Libraries:**
+   - You can install the necessary libraries listed in the `requirements.txt` file. To do this, place the `requirements.txt` file in the same folder as the `.py` file and run:
+     ```bash
+     pip install -r requirements.txt
+     ```
+   - Alternatively, you can install the libraries as needed based on any error messages that arise.
 
-- **Provides a GUI for User Input:** The application features a graphical user interface (GUI) created with `tkinter`. Users can input stock symbols, select date ranges, choose data intervals, and manually input an annual risk-free rate.
-- Fetches historical stock data from Yahoo Finance.
-- Calculates and saves log returns, covariance matrix, and correlation matrix to Excel.
-- Generates an efficient frontier and optimal portfolio.
+3. **Download the Code:**
+   - Download the `main.py` file from the repository. Move this file to a folder on your computer. You can rename it if you wish, but keep it simple.
 
-## Installation
+4. **Open a Terminal:**
+   - **Linux/macOS:** Use `cd` to navigate to the directory. Example:
+     ```bash
+     cd /path/to/your/directory
+     ```
+   - **Windows:** Open Command Prompt or PowerShell, then use `cd` to navigate to the directory. Example:
+     ```cmd
+     cd C:\path\to\your\directory
+     ```
 
-To get started with **Efficient Portfolio**, follow these steps:
+5. **Run the Application:**
+   - Execute the following command:
+     ```bash
+     python main.py
+     ```
 
-1. **Clone the Repository:**
+6. **Handle Missing Libraries:**
+   - If you encounter errors about missing modules, install them as instructed by the error messages.
 
-    ```bash
-    git clone https://github.com/yourusername/efficient-portfolio.git
-    cd efficient-portfolio
-    ```
+7. **Using the GUI:**
+   - After running the application, a GUI will appear. Follow the instructions in the "How-To-Use" section to interact with it.
 
-2. **Set Up a Virtual Environment:**
-
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-3. **Install Required Packages:**
-
-    Install the necessary Python packages using `pip`:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-## Usage
+## How-To-Use
 
 1. **Run the Application:**
+   - Refer to step #5 in the "How-To-Setup" section.
 
-    Start the GUI application by executing:
+2. **Enter Stock Symbols:**
+   - Input stock symbols separated by commas or use the search function to find stocks by company name.
 
-    ```bash
-    python main.py
-    ```
+3. **Select Date Range:**
+   - Choose the start and end dates for the historical data.
 
-2. **Using the GUI:**
+4. **Set Interval and Risk-Free Rate:**
+   - Select the data interval (daily, weekly, monthly).
+   - Input the annual risk-free rate as a percentage (e.g., 2 for 2%).
 
-    - **Enter Stock Symbols:** Input the stock symbols (e.g., AAPL, MSFT) separated by commas.
-    - **Select Date Range:** Choose the start and end dates for the historical data.
-    - **Set Interval:** Choose the data interval (daily, weekly, or monthly).
-    - **Enter Risk-Free Rate:** Input the annual risk-free rate as a percentage (e.g., 2 for 2%). This rate will be used to calculate the Capital Allocation Line (CAL) and the optimal portfolio.
-    - **Fetch Data:** Click the button to start fetching data.
-    - **View Results:** The results will be saved to an Excel file named `Efficient_Portfolio.xlsx`.
+5. **Fetch Data:**
+   - Click "Fetch Data" to retrieve and analyze the data.
 
-## Code Overview
+6. **Save Results:**
+   - Name the Excel file and click "OK" to save the results.
 
-The code is structured into several main parts:
+## Results
 
-- **Data Fetching:** Uses `yfinance` to download stock data and calculate log returns.
-- **Data Processing:** Calculates the covariance matrix, correlation matrix, and efficient frontier.
-- **GUI:** Created with `tkinter` for user interaction.
-- **Excel Export:** Uses `openpyxl` to format and save data into Excel.
+- Navigate to the directory where you ran the code. You will find an Excel file named as you specified.
+- Each stock has its own sheet with data, including open, high, low, close, adjusted closing, and volume.
+- Summary sheets with combined data for all stocks are also included.
 
-### Key Files
+## Thanks
 
-- `main.py`: The main script to run the application.
-- `requirements.txt`: Lists required Python packages.
-
-## Contributing
-
-Contributions to the **Efficient Portfolio** project are welcome! Please follow these steps to contribute:
-
-1. **Fork the Repository** and create a new branch.
-2. **Make Changes** and commit your changes with descriptive messages.
-3. **Push Changes** to your forked repository.
-4. **Create a Pull Request** to the main repository.
-
-If you have suggestions or improvements, please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-For more detailed documentation and examples, please refer to the [Wiki](https://github.com/yourusername/efficient-portfolio/wiki).
+If you have suggestions or improvements, please let me know, and I'll consider them for future updates.
