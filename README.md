@@ -1,15 +1,3 @@
----
-title: "Efficient Portfolio"
-author: "Your Name"
-date: "`r Sys.Date()`"
-output: 
-  html_document:
-    toc: true
-    toc_depth: 2
-    theme: united
-    highlight: tango
----
-
 # Efficient Portfolio
 
 The **Efficient Portfolio** project is a Python-based application designed to analyze and optimize stock portfolios. This tool helps users fetch historical stock data, calculate various financial metrics, and visualize the efficient frontier of a portfolio.
